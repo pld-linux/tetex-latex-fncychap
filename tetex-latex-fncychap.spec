@@ -1,6 +1,6 @@
 
-%define short_name fncychap
-%define	texhash	[ ! -x %{_bindir}/texhash ] || %{_bindir}/texhash 1>&2 ;
+%define	short_name	fncychap
+%define	texhash		[ ! -x %{_bindir}/texhash ] || %{_bindir}/texhash 1>&2 ;
 
 Summary:	Six fancy chapter styles
 Summary(pl):	Sze¶æ eleganckich stylów dla rozdzia³ów
