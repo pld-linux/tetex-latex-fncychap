@@ -10,7 +10,7 @@ Release:	1
 License:	LaTeX Project Public License
 Group:		Applications/Publishing/TeX
 Source0:	ftp://cam.ctan.org/tex-archive/macros/latex/contrib/fncychap.tar.gz
-# Source0-md5:	da381fa71af6e1c244f64e04c60dee6b
+# Source0-md5:	88db1298f2288fc4b49afe899122e266
 Requires:	tetex-latex
 Requires(post,postun):	/usr/bin/texhash
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
