@@ -16,9 +16,9 @@ Requires(post,postun):	/usr/bin/texhash
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-The package modifies the tabularx environment to combine the features of the
-tabularx package (auto-sized columns in a fixed width table) with those of the
-longtable package (multi-page tables).
+The package modifies the tabularx environment to combine the features
+of the tabularx package (auto-sized columns in a fixed width table)
+with those of the longtable package (multi-page tables).
 
 %description -l pl
 Pakiet modyfikuje ¶rodowisko tabularx ³±cz±c cechy pakietu tabularx
