@@ -2,15 +2,15 @@
 %define short_name fncychap
 %define	texhash	[ ! -x %{_bindir}/texhash ] || %{_bindir}/texhash 1>&2 ;
 
-Summary:	Six fancy chapter styles.
-Summary(pl):	Sze¶æ eleganckich stylów dla rozdzia³ów.
+Summary:	Six fancy chapter styles
+Summary(pl):	Sze¶æ eleganckich stylów dla rozdzia³ów
 Name:		tetex-latex-%{short_name}
 Version:	1.11
 Release:	1
 License:	LaTeX Project Public License
 Group:		Applications/Publishing/TeX
 Source0:	ftp://cam.ctan.org/tex-archive/macros/latex/contrib/fncychap.tar.gz
-# Source0-md5:	54b00fa8a0f57e3dcff8d49c541aaa71
+# Source0-md5:	da381fa71af6e1c244f64e04c60dee6b
 Requires:	tetex-latex
 Requires(post,postun):	/usr/bin/texhash
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
