@@ -6,11 +6,13 @@ Summary:	Six fancy chapter styles
 Summary(pl):	Sze¶æ eleganckich stylów dla rozdzia³ów
 Name:		tetex-latex-%{short_name}
 Version:	1.11
-Release:	1
+Release:	2
 License:	LaTeX Project Public License
 Group:		Applications/Publishing/TeX
-Source0:	ftp://cam.ctan.org/tex-archive/macros/latex/contrib/fncychap.tar.gz
-# Source0-md5:	88db1298f2288fc4b49afe899122e266
+Source0:	ftp://cam.ctan.org/tex-archive/macros/latex/contrib/fncychap/fncychap.sty
+Source1:	ftp://cam.ctan.org/tex-archive/macros/latex/contrib/fncychap/fncychap.ps
+# ftp://cam.ctan.org/tex-archive/macros/latex/contrib/fncychap/readme.txt
+Source2:	%{name}.readme	
 Requires:	tetex-latex
 Requires(post,postun):	/usr/bin/texhash
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -26,13 +28,15 @@ Pakiet modyfikuje ¶rodowisko tabularx ³±cz±c cechy pakietu tabularx
 cechami pakietu longtable (wielostronicowe tabele).
 
 %prep
-%setup -q -n %{short_name}
+%setup -c -T -q 
+install %{SOURCE1} .
+install %{SOURCE2} readme.txt
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}/texmf/tex/latex/%{short_name}
 
-install %{short_name}.sty $RPM_BUILD_ROOT%{_datadir}/texmf/tex/latex/%{short_name}
+install %{SOURCE0} $RPM_BUILD_ROOT%{_datadir}/texmf/tex/latex/%{short_name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
