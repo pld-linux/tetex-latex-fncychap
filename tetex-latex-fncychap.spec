@@ -3,7 +3,7 @@
 %define	texhash		[ ! -x %{_bindir}/texhash ] || %{_bindir}/texhash 1>&2 ;
 
 Summary:	Six fancy chapter styles
-Summary(pl.UTF-8):   Sześć eleganckich stylów dla rozdziałów
+Summary(pl.UTF-8):	Sześć eleganckich stylów dla rozdziałów
 Name:		tetex-latex-%{short_name}
 Version:	1.33
 Release:	1
