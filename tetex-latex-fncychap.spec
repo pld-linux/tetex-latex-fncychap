@@ -3,7 +3,7 @@
 %define	texhash		[ ! -x %{_bindir}/texhash ] || %{_bindir}/texhash 1>&2 ;
 
 Summary:	Six fancy chapter styles
-Summary(pl):	Sze¶æ eleganckich stylów dla rozdzia³ów
+Summary(pl.UTF-8):   SzeÅ›Ä‡ eleganckich stylÃ³w dla rozdziaÅ‚Ã³w
 Name:		tetex-latex-%{short_name}
 Version:	1.33
 Release:	1
@@ -20,8 +20,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 The package contains six fancy chapter styles to use in your LaTeX
 documents.
 
-%description -l pl
-Pakiet zawiera sze¶æ ozdobnych stylów rozdzia³ów do u¿ywania w
+%description -l pl.UTF-8
+Pakiet zawiera szeÅ›Ä‡ ozdobnych stylÃ³w rozdziaÅ‚Ã³w do uÅ¼ywania w
 dokumentach LaTeXowych.
 
 %prep
